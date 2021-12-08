@@ -1,0 +1,172 @@
+
+.course {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    border-left: 8px solid $pictonBlue;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
+
+    &__left {
+        max-width: 450px;
+        width: 100%;
+        padding: 25px 10px 42px 35px;
+    }
+
+    &__right {
+        width: 100%;
+        height: auto;
+        padding: 11px 9px;
+        background-image: url(../images/coach.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        background-color: #EFEFEF;
+        border-radius: 10px;
+    }
+
+    &__icon {
+        width: 42px;
+        height: 42px;
+        background-color: $blackRussian;
+        border-radius: 5px;
+        background-image: url(../images/course-icons/2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 6px;
+    }
+
+    span {
+        display: block;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: $doveGray;
+        margin-bottom: 30px;
+    }
+
+    &__offer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            font-size: 40px;
+            font-weight: 500;
+            padding-left: 43px;
+            margin-bottom: 35px;
+
+            &::before {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 11px;
+                left: 0px;
+                width: 32px;
+                height: 32px;
+                font-size: 22px;
+                font-weight: 500;
+                border-radius: 50%;
+                color: $mirage;
+            }
+        }
+    }
+
+    &__price {
+        
+        &::before {
+            content: "₽";
+            background-color: $sunglow;
+        }
+
+        span {
+            margin-left: 10px;
+            width: 83px;
+            color: $doveGray;
+            font-size: 14px;
+        }
+
+        span:first-child {
+            width: auto;
+            font-size: 40px;
+            color: $blackRussian;
+        }
+
+    }
+
+    &__lessons {
+        span {
+            margin-left: 10px;
+            width: 49px;
+            color: $blackRussian;
+            font-size: 14px;
+        }
+
+        &::before {
+            content: '';
+            background-image: url('../images/1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: $pictonBlue;
+        }
+    }
+
+    &__tests {
+
+        span {
+            margin-left: 10px;
+            width: 80px;
+            color: $blackRussian;
+            font-size: 14px;
+        }
+
+        &::before {
+            content: '';
+            background-image: url('../images/2.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: $pictonBlue;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 191px;
+        height: 50px;
+        border-radius: 39px;
+        background-color: $pictonBlue;
+        color: white;
+    }
+
+    &__tryfree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 199px;
+        height: 50px;
+        border-radius: 39px;
+        background-color: white;
+        color: $pictonBlue;
+        border: 2px solid $pictonBlue;
+    }
+}
