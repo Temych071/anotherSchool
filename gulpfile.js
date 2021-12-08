@@ -1,10 +1,9 @@
 const { src, dest, watch, parallel, series } = require('gulp');
 
-const scss            = require('gulp-sass');
+const scss            = require('gulp-sass')(require('sass'));
 const concat          = require('gulp-concat');
 const autoprefixer    = require('gulp-autoprefixer');
 const uglify          = require('gulp-uglify');
-const imagemin        = require('gulp-imagemin');
 const rename          = require('gulp-rename');
 const del             = require('del');
 const browserSync     = require('browser-sync').create();
@@ -50,17 +49,7 @@ function scripts() {
 
 function images() {
   return src('assets/images/**/*.*')
-  .pipe(imagemin([
-    imagemin.gifsicle({ interlaced: true }),
-    imagemin.mozjpeg({ quality: 75, progressive: true }),
-    imagemin.optipng({ optimizationLevel: 5 }),
-    imagemin.svgo({
-      plugins: [
-        { removeViewBox: true },
-        { cleanupIDs: false }
-      ]
-    })
-  ]))
+  
   .pipe(dest('dist/image'))
 }
 

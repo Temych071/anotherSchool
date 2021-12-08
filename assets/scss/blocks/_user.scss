@@ -1,0 +1,36 @@
+
+.user {
+    position: relative;
+
+    &__face {
+        border-radius: 50%;
+    }
+
+    span {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        transform: translateX(-50%);
+        font-size: 13px;
+        font-weight: 700;
+        color: white;
+    }
+
+    &__icon1 {
+        top: 3px;
+        background-color: $radicalRed;
+        box-shadow: 0px 0px 35px rgba(146, 225, 255, 0.54);
+        border-radius: 3px;
+    }
+
+    &__icon2 {
+        top: 30px;
+        background-color: $cerulean;
+        box-shadow: 0px 0px 35px rgba(146, 225, 255, 0.54);
+        border-radius: 3px;
+    }
+}

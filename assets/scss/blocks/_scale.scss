@@ -1,0 +1,47 @@
+
+.scale {
+
+    height: 10px;
+
+    &__outer {
+        position: relative;
+        max-width: 150px;
+        background-color: $mirage;
+        border-radius: 16px;
+        height: 10px;
+
+        &::after, &::before {
+            position: absolute;
+            top: 12px;
+            font-size: 12px;
+            font-weight: 700;
+            color: white;
+        }
+
+        &::after {
+            content: "0";
+            left: 0;
+        }
+
+        &::before {
+            content: "100";
+            right: 0;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        background-color: $pictonBlue;
+        border-radius: 16px;
+        height: 10px;
+    }
+
+    &__exist {
+        position: absolute;
+        top: 12px;
+        right: 0;
+        font-size: 12px;
+        font-weight: 700;
+        color: $pictonBlue;
+    }
+}

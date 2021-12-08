@@ -1,0 +1,52 @@
+.header {
+    background: linear-gradient(180deg, rgba(0, 2, 32, 0) 0%, $blackRussian 100%), $blackRussian;
+    
+    &__inner {
+        height: 90px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-left: 19px;
+    }
+
+    &__progress {
+        max-width: 150px;
+        width: 100%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: 25px;
+        color: $pictonBlue;
+    }
+
+    &__course-title {
+        display: block;
+        font-family: "Roboto-Medium", sans-serif;
+        font-size: 14px;
+        color: $pictonBlue;
+        margin-bottom: 8px;
+    }
+
+    &__user {
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    &__button {
+        width: 134px;
+        height: 50px;
+        font-family: "Roboto-Medium", sans-serif;
+        background-color: $mirage;
+        border-radius: 39px;
+        text-align: center;
+        padding: 17px 40px;
+        font-size: 14px;
+        color: white;
+    }
+
+    &__rating {
+        margin-right: 20px;
+    }
+}
