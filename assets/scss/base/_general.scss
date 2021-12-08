@@ -4,7 +4,7 @@ html {
     font-size: $font-size-base;
     line-height: $line-height-normal;
     background-color: white;
-    color: black;
+    color: $blackRussian;
     height: 100%;
   }
   
@@ -18,11 +18,13 @@ html {
       margin: 0;
       padding: 0;
       height: 100%;
+      display: flex;
+      flex-direction: column;
   }
   
   main {
     flex-grow: 1;
-    background-color: #f5f5f5;
+    background-color: #fff;
   }
 
   a {
@@ -34,3 +36,8 @@ html {
       height: 100%;
   }
   
+  .container {
+      max-width: $container-max;
+      margin: $container-margin;
+      padding: $container-padding;
+  }

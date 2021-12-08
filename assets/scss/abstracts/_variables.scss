@@ -6,12 +6,17 @@
 */
 // Пример указания цветов
 
-
+$blackRussian:      #000220;
+$iron:              #E0E1E3;
+$mirage:            #1F213B;   
+$radicalRed:        #FF3A55;
+$cerulean:          #07B3E8;
+$pictonBlue:        #29B2E6;
 
 /**
 * Fonts
 */
-$font-size-base: 16px;
+$font-size-base: 14px;
 $font-family-custom: "Roboto-Regular";
 $font-family-medium: 'Roboto-Medium';
 $font-weight-regular: 400;
@@ -20,10 +25,10 @@ $font-weight-bold: 700;
 $font-path: '../fonts';
 
 $font-size-huge: 30px;
-$font-size-large: 24px;
-$font-size-medium: 20px;
-$font-size-link: 18px;
-$font-size-normal: 16px;
+$font-size-large: 26px;
+$font-size-medium: 18px;
+$font-size-title: 22px;
+$font-size-normal: 15px;
 $font-size-small: 14px;
 
 $line-height-default: 1.7;
@@ -43,13 +48,12 @@ $screen-large: 'min-width: 992px';
 /**
 * Layout
 */
-$container-padding: 0 20px;
+$container-padding: 0 15px;
 $container-margin: 0 auto;
-$container-max: 1280px;
+$container-max: 1250px;
 $container-min: 375px;
 
 $title-margin: 20px 0;
-$blockquote-padding: 20px 25px;
 
 $margin-small: 5px;
 $margin-normal: 10px;

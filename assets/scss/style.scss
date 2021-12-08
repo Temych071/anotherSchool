@@ -26,12 +26,17 @@
 //  Пример подключения стилей блоков
 // @import "components/my-block";
 
+@import "blocks/header";
+@import "blocks/scale";
+@import "blocks/header-menu";
+@import "blocks/user";
+
 
 /* @import "blocks/container";
 @import "blocks/icon";
 @import "blocks/link";
 
-@import "blocks/header";
+
 @import "blocks/footer";
 
 @import "blocks/profile";
