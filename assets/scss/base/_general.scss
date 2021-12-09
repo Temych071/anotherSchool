@@ -22,9 +22,19 @@ html {
       flex-direction: column;
   }
   
+  .left-menu {
+    max-width: 390px;
+    width: 100%;
+  }
+
   main {
-    flex-grow: 1;
-    background-color: #fff;
+      flex-grow: 1;
+      background-color: #fff;
+  }
+
+  .main__inner {
+    display: flex;
+    justify-content: space-between;
   }
 
   a {
@@ -40,4 +50,9 @@ html {
       max-width: $container-max;
       margin: $container-margin;
       padding: $container-padding;
+  }
+
+  .center {
+      max-width: 810px;
+      width: 100%;
   }
