@@ -1,0 +1,109 @@
+
+.footer {
+    padding: 65px 0;
+    background: linear-gradient(180deg, rgba(0, 2, 32, 0) 0%, #000220 100%), #000220;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: block;
+        min-height: 35px;
+        margin-bottom: 47px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__info {
+
+        max-width: 180px;
+
+        li { 
+            font-size: 15px;
+            color: $stormGray;
+            margin-bottom: 15px;
+            list-style-type: none;
+        }
+
+    }
+
+    &__column-top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 35px;
+        margin-bottom: 47px;
+    }
+
+    &__enter {
+        font-size: 15px;
+        color: $stormGray;
+    }
+
+    &__enter {
+        font-size: 15px;
+        color: $stormGray;
+    }
+
+    &__pay {
+        margin-left: 20px;
+        font-size: 15px;
+        color: $stormGray;
+    }
+
+    &__link {
+        margin-bottom: 15px;
+        font-size: 15px;
+        color: white;
+    }
+
+    &__contact {
+        position: relative;
+        font-size: 17px;
+        font-weight: 500;
+        color: white;
+        padding-left: 35px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__tel {
+        &::after {
+            background-image: url('../images/footer-icons/phone.svg');
+        }
+    }
+
+    &__mailto {
+        &::after {
+            background-image: url('../images/footer-icons/mailto.svg');
+        }
+    }
+
+    &__img {
+        margin: 0 auto 10px;
+        max-width: 178px;
+    }
+
+    &__license-name {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 125px;
+        font-size: 15px;
+        color: $stormGray;
+    }
+}
