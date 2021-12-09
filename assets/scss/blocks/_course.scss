@@ -12,7 +12,7 @@
     &__left {
         max-width: 450px;
         width: 100%;
-        padding: 25px 10px 42px 35px;
+        padding: 25px 14px 42px 25px;
     }
 
     &__right {
@@ -143,29 +143,12 @@
         }
     }
 
-    &__buttons {
-        display: flex;
-        justify-content: space-between;
-    }
-
     &__buy {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 191px;
-        height: 50px;
-        border-radius: 39px;
         background-color: $pictonBlue;
         color: white;
     }
 
     &__tryfree {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 199px;
-        height: 50px;
-        border-radius: 39px;
         background-color: white;
         color: $pictonBlue;
         border: 2px solid $pictonBlue;
