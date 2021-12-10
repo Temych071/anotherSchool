@@ -7,30 +7,30 @@
     }
 
     span {
-        width: 20px;
-        height: 20px;
+        width: rem(20px);
+        height: rem(20px);
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
         left: 0;
         transform: translateX(-50%);
-        font-size: 13px;
+        font-size: rem(13px);
         font-weight: 700;
         color: white;
     }
 
     &__icon1 {
-        top: 3px;
+        top: rem(3px);
         background-color: $radicalRed;
         box-shadow: 0px 0px 35px rgba(146, 225, 255, 0.54);
-        border-radius: 3px;
+        border-radius: rem(3px);
     }
 
     &__icon2 {
-        top: 30px;
+        top: rem(30px);
         background-color: $cerulean;
         box-shadow: 0px 0px 35px rgba(146, 225, 255, 0.54);
-        border-radius: 3px;
+        border-radius: rem(3px);
     }
 }

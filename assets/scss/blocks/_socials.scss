@@ -4,13 +4,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 45px;
-        height: 45px;
-        border-radius: 5px;
+        width: rem(45px);
+        height: rem(45px);
+        border-radius: rem(5px);
         background-color: $mirage;
 
         &:not(:first-child) {
-            margin-left: 10px;
+            margin-left: rem(10px);
         }
     }
 }

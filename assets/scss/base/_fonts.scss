@@ -13,3 +13,11 @@
   src: url("#{$font-path}/#{$font-family-medium}.woff") format("woff"),
        url("#{$font-path}/#{$font-family-medium}.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: $font-family-bold;
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  src: url("#{$font-path}/#{$font-family-bold}.woff") format("woff"),
+       url("#{$font-path}/#{$font-family-bold}.woff2") format("woff2");
+}

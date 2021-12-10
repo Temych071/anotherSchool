@@ -2,41 +2,41 @@
 .course {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: rem(800px);
     border: 1px solid rgba(0, 0, 0, 0.07);
-    border-radius: 10px;
-    border-left: 8px solid $pictonBlue;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
-    margin-bottom: 33px;
+    border-radius: rem(10px);
+    border-left: rem(8px) solid $pictonBlue;
+    box-shadow: 0px rem(6px) rem(20px) rgba(0, 0, 0, 0.12);
+    margin-bottom: rem(33px);
 
     &__left {
-        max-width: 450px;
+        max-width: rem(450px);
         width: 100%;
-        padding: 25px 14px 42px 25px;
+        padding: rem(25px) rem(14px) rem(42px) rem(25px);
     }
 
     &__right {
-        max-width: 350px;
+        max-width: rem(350px);
         width: 100%;
         height: auto;
-        padding: 11px 9px;
+        padding: rem(11px) rem(9px);
         background-image: url(../images/coach.png);
         background-repeat: no-repeat;
         background-position: top right;
         background-size: cover;
         background-color: #EFEFEF;
-        border-radius: 10px;
+        border-radius: rem(10px);
     }
 
     &__icon {
-        width: 42px;
-        height: 42px;
+        width: rem(42px);
+        height: rem(42px);
         background-color: $blackRussian;
-        border-radius: 5px;
+        border-radius: rem(5px);
         background-image: url(../images/course-icons/2.png);
         background-repeat: no-repeat;
         background-position: center;
-        margin-bottom: 6px;
+        margin-bottom: rem(6px);
     }
 
     span {
@@ -44,19 +44,19 @@
     }
 
     &__title {
-        font-size: 26px;
-        font-weight: 700;
-        margin: 0 0 6px;
+        font-family: $font-family-bold;
+        font-size: $font-size-large;
+        margin: 0 0 rem(6px);
         line-height: 1.2
         ;
 
         span {
-            margin-bottom: 5px;
+            margin-bottom: rem(5px);
         }
     }
 
     &__text {
-        font-size: 15px;
+        font-size: $font-size-normal;
         color: $doveGray;
         margin-bottom: 25px;
     }
@@ -65,36 +65,44 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
 
         div {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             position: relative;
-            font-size: 40px;
-            font-weight: 500;
-            padding-left: 43px;
-            margin-bottom: 10px;
+            font-family: $font-family-medium;
+            font-size: rem(40px);
+            padding-left: rem(43px);
+            margin-bottom: rem(10px);
 
             &::before {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                top: 11px;
+                top: rem(11px);
                 left: 0px;
-                width: 32px;
-                height: 32px;
+                width: rem(32px);
+                height: rem(32px);
                 font-size: 22px;
                 font-weight: 500;
                 border-radius: 50%;
                 color: $mirage;
             }
         }
+
+        span {
+          display: block;
+          margin-left: rem(10px);
+          color: $doveGray;
+          font-size: rem(14px);
+      }
     }
 
     &__price {
+        width: 100%;
         
         &::before {
             content: "₽";
@@ -102,26 +110,23 @@
         }
 
         span {
-            margin-left: 10px;
-            width: 83px;
-            color: $doveGray;
-            font-size: 14px;
+            font-size: rem(40px);
+            color: $blackRussian;
         }
 
-        span:first-child {
-            width: auto;
-            font-size: 40px;
-            color: $blackRussian;
+        span:last-child {
+            margin-left: rem(10px);
+            width: rem(83px);
+            color: $doveGray;
+            font-size: rem(14px);
         }
 
     }
 
     &__lessons {
         span {
-            margin-left: 10px;
-            width: 49px;
+            width: rem(49px);
             color: $blackRussian;
-            font-size: 14px;
         }
 
         &::before {
@@ -136,10 +141,8 @@
     &__tests {
 
         span {
-            margin-left: 10px;
-            width: 80px;
+            width: rem(80px);
             color: $blackRussian;
-            font-size: 14px;
         }
 
         &::before {
