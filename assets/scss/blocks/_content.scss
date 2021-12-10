@@ -1,0 +1,45 @@
+.content {
+
+    &__title {
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__choose {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__option {
+        max-width: 230px;
+        width: 100%;
+        min-height: 266px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 17px;
+        border: 6px solid $silver;
+        border-radius: 7px;
+
+        p {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            color: $silver;
+            margin: 15px 0 0 0;
+        }
+    }
+
+    &__subject-item {
+        width: 49%;
+        display: block;
+        float: right;
+    }
+}
+
+.sale {
+    float: left;
+}

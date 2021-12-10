@@ -1,0 +1,67 @@
+.payment {
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 30px 63px;
+    background-color: white;
+    border-radius: 7px;
+    
+    &__page1 {
+        display: none;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    
+    &__progress {
+        display: flex;
+        justify-content: space-between;
+        height: 45px;
+        border-radius: 7px;
+        background-color: $wildSand;
+        counter-reset: item;
+
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0 14px 0 58px;
+            color: $doveGray;
+            border-radius: 7px;
+            background-color: $wildSand;
+
+            &::after {
+                content: counter(item);
+                counter-increment: item;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+                width: 30px;
+                height: 30px;
+                background-color: $silver;
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__progress-active {
+        color: $pictonBlue;
+    }
+}
