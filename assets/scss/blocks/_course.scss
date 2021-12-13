@@ -1,6 +1,7 @@
 
 .course {
     display: flex;
+    position: relative;
     justify-content: space-between;
     max-width: rem(800px);
     border: 1px solid rgba(0, 0, 0, 0.07);
@@ -37,6 +38,27 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: rem(6px);
+    }
+
+    &__skill-1 {
+        cursor: pointer;
+        background-image: url(../images/course-icons/1.svg);
+    }
+
+    &__skill-2 {
+        background-image: url(../images/course-icons/2.png);
+    }
+
+    &__skill-3 {
+        background-image: url(../images/course-icons/3.png);
+    }
+
+    &__skill-4 {
+        background-image: url(../images/course-icons/4.png);
+    }
+
+    &__skill-5 {
+        background-image: url(../images/course-icons/5.png);
     }
 
     span {
