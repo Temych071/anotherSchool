@@ -3,24 +3,20 @@
     justify-content: center;
     margin: 0 auto;
 
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: rem(50px);
+      border-radius: rem(39px);
+    }
+
     &__buy {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 188px;
-        height: 50px;
-        border-radius: 39px;
-        font-size: 14px;
+        width: rem(188px);
     }
 
     &__tryfree {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        padding: 0 17px;
-        height: 50px;
-        border-radius: 39px;
-        margin-left: 15px;
+        padding: 0 rem(17px);
+        margin-left: rem(15px);
     }
 }

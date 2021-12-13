@@ -1,19 +1,19 @@
 
 .scale {
 
-    height: 10px;
+    height: rem(10px);
 
     &__outer {
         position: relative;
-        max-width: 150px;
+        max-width: rem(150px);
         background-color: $mirage;
-        border-radius: 16px;
-        height: 10px;
+        border-radius: rem(16px);
+        height: rem(10px);
 
         &::after, &::before {
             position: absolute;
-            top: 12px;
-            font-size: 12px;
+            top: rem(12px);
+            font-size: rem(12px);
             font-weight: 700;
             color: white;
         }
@@ -32,15 +32,15 @@
     &__inner {
         position: relative;
         background-color: $pictonBlue;
-        border-radius: 16px;
-        height: 10px;
+        border-radius: rem(16px);
+        height: rem(10px);
     }
 
     &__exist {
         position: absolute;
-        top: 12px;
+        top: rem(12px);
         right: 0;
-        font-size: 12px;
+        font-size: rem(12px);
         font-weight: 700;
         color: $pictonBlue;
     }
