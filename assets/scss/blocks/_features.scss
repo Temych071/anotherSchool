@@ -3,7 +3,7 @@
     border-radius: rem(10px);
     border-left: rem(8px) solid $sunglow;
     box-shadow: 0px rem(6px) rem(20px) rgba(0, 0, 0, 0.12);
-    margin-bottom: rem(33px);
+    margin-bottom: rem(125px);
     padding: rem(35px) 0px rem(21px) 0px;
     
     &__title {
@@ -36,7 +36,7 @@
         li {
             position: relative;
             color: $martinique;
-            margin-bottom: rem(4px);
+            margin-bottom: rem(8px);
             padding-left: rem(30px);
             
             &::after {
