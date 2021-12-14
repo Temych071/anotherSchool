@@ -23,8 +23,8 @@
         left: rem(200px);
         background-color: transparent;
         border-left: 22px solid transparent;
-	    border-right: 22px solid transparent;
-	    border-bottom: 9px solid #fff;
+	      border-right: 22px solid transparent;
+	      border-bottom: 9px solid #fff;
     }
 
     li {
@@ -51,5 +51,19 @@
             box-shadow: 0px 0px 7px $sunglow;
             
         }
+    }
+
+    &__list {
+      counter-reset: list;
+
+      li {
+        display: block;
+
+        &::before {
+          content: counter(list) ". ";
+          counter-increment: list;
+        }
+      }
+
     }
 }
