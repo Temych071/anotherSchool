@@ -7,10 +7,28 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
+        @media ($screen-middle) {
+            justify-content: center;
+            flex-wrap: wrap;
+            height: max-content;
+            padding: rem(20px) 0;
+        }
     }
 
     &__logo {
+        
         margin-left: rem(19px);
+        margin-right: auto;
+
+        @media ($screen-middle) {
+             margin-bottom: rem(15px);
+             margin-right: 30%;
+        }
+
+        @media (max-width: 455px) {
+            margin-right: 20%;
+       }
     }
 
     &__progress {
@@ -20,6 +38,10 @@
         margin-left: auto;
         margin-right: rem(40px);
         color: $pictonBlue;
+
+        @media ($screen-medium) {
+            display: none;
+        }
     }
 
     &__course-title {
@@ -43,6 +65,11 @@
         text-align: center;
         padding: rem(17px) rem(40px);
         color: white;
+
+        @media ($screen-large) {
+            width: rem(100px);
+            padding: rem(17px) rem(15px);
+        }
     }
 
     &__rating {

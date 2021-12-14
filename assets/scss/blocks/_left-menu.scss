@@ -7,6 +7,14 @@
   padding-bottom: 150px;
   height: max-content;
 
+  @media ($screen-huge) {
+    max-width: 225px;
+    }
+
+    @media ($screen-medium) {
+        display: none;
+    }
+
   &__top {
     background: #010220;
     border-radius: 5px 5px 0px 0px;

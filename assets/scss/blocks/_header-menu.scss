@@ -1,6 +1,11 @@
 
 .header-menu {
-    
+
+    @media ($screen-middle) {
+        margin-left: 25%;
+        margin-bottom: rem(20px);
+   }
+
     &__button {
         border: none;
         background-color: transparent;

@@ -48,9 +48,11 @@ $line-height-small: 1.2;
 * Breakpoints
 */
 // Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
-$screen-small: 'min-width: 375px';
-$screen-medium: 'min-width: 768px';
-$screen-large: 'min-width: 992px';
+$screen-small: 'max-width: 375px';
+$screen-middle: 'max-width: 556px';
+$screen-medium: 'max-width: 768px';
+$screen-large: 'max-width: 992px';
+$screen-huge: 'max-width: 1220px';
 
 
 /**

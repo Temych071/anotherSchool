@@ -3,12 +3,17 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    max-width: rem(800px);
     border: 1px solid rgba(0, 0, 0, 0.07);
     border-radius: rem(10px);
     border-left: rem(8px) solid $pictonBlue;
     box-shadow: 0px rem(6px) rem(20px) rgba(0, 0, 0, 0.12);
     margin-bottom: rem(33px);
+
+    @media ($screen-medium) {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
 
     &__left {
         max-width: rem(450px);
@@ -27,6 +32,12 @@
         background-size: cover;
         background-color: #EFEFEF;
         border-radius: rem(10px);
+
+        @media ($screen-large) {
+            height: 100%;
+       }
+
+       
     }
 
     &__icon {
@@ -69,8 +80,7 @@
         font-family: $font-family-bold;
         font-size: $font-size-large;
         margin: 0 0 rem(6px);
-        line-height: 1.2
-        ;
+        line-height: 1.2;
 
         span {
             margin-bottom: rem(5px);
@@ -89,6 +99,10 @@
         flex-wrap: wrap;
         margin-bottom: rem(20px);
 
+        @media ($screen-large) {
+            justify-content: center;
+        }
+
         div {
             display: flex;
             justify-content: flex-start;
@@ -99,13 +113,20 @@
             padding-left: rem(43px);
             margin-bottom: rem(10px);
 
-            &::before {
+            @media ($screen-large) {
+                width: 100%;
+                flex-direction: column;
+                padding-left: 0;
+            }
+
+            & span:first-child::before {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: absolute;
                 top: rem(11px);
                 left: 0px;
+                transform: translateX(-120%);
                 width: rem(32px);
                 height: rem(32px);
                 font-size: 22px;
@@ -118,22 +139,29 @@
         span {
           display: block;
           margin-left: rem(10px);
-          color: $doveGray;
-          font-size: rem(14px);
+          position: relative;
+
+          @media ($screen-large) {
+            text-align: center;
+        }
       }
     }
 
     &__price {
         width: 100%;
         
-        &::before {
-            content: "₽";
-            background-color: $sunglow;
-        }
-
         span {
             font-size: rem(40px);
             color: $blackRussian;
+        }
+
+        span:first-child {
+
+            &::before {
+                content: "₽";
+                background-color: $sunglow;
+                
+            }
         }
 
         span:last-child {
@@ -141,30 +169,57 @@
             width: rem(83px);
             color: $doveGray;
             font-size: rem(14px);
+            
+    
+            @media ($screen-large) {
+                width: 100%;
+            }
         }
 
     }
 
     &__lessons {
-        span {
+        span:last-child {
             width: rem(49px);
             color: $blackRussian;
-        }
+            font-size: rem(14px);
 
-        &::before {
-            content: '';
-            background-image: url('../images/1.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: $pictonBlue;
+            @media ($screen-large) {
+                width: 100%;
+            }
         }
     }
 
+    &__data {
+        font-size: rem(40px);
+        color: $blackRussian;
+
+        &::before {
+                content: '';
+                background-image: url('../images/1.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: $pictonBlue;
+                transform: translateX(-320%);
+            
+        }
+       } 
+
     &__tests {
         margin-right: rem(30px);
-        span {
+
+        @media ($screen-large) {
+            margin-right: 0;
+        }
+
+        span:last-child {
             width: rem(80px);
             color: $blackRussian;
+            font-size: rem(14px);
+            
+            @media ($screen-large) {
+                width: 100%;
+            }
         }
 
         &::before {
@@ -179,11 +234,25 @@
     &__buy {
         background-color: $pictonBlue;
         color: white;
+        transition: all 1s;
+
+        &:hover {
+            background-color: white;
+            color: $pictonBlue;
+            border: 2px solid $pictonBlue;
+        }
     }
 
     &__tryfree {
         background-color: white;
         color: $pictonBlue;
         border: 2px solid $pictonBlue;
+        transition: all 1s;
+
+
+        &:hover {
+            background-color: $pictonBlue;
+            color: white;
+        }
     }
 }

@@ -2,12 +2,28 @@
 .footer {
     padding: rem(65px) 0;
     background: linear-gradient(180deg, rgba(0, 2, 32, 0) 0%, #000220 100%), #000220;
+    
+    @media ($screen-large) {
+        padding: rem(30px) 0;
+    }
+
 
     &__inner {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media ($screen-large) {
+            justify-content: space-around;
+       }
     }
 
+    &__column {
+        padding: 0 15px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
     &__logo {
         display: block;
         min-height: rem(35px);

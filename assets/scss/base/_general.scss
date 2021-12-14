@@ -69,6 +69,11 @@ html {
   .center {
       max-width: 810px;
       width: 100%;
+      padding-left: rem(15px);
+
+      @media ($screen-huge) {
+        max-width: 965px;
+    }
   }
 
   h1, h2, h3, h4, h5, p {

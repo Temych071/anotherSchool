@@ -57,11 +57,24 @@
     &__buy {
         background-color: $sunglow;
         color: $mirage;
+        transition: all 1s;
+
+        &:hover {
+            background-color: $mirage;
+            color: $sunglow;
+            border: 2px solid $mirage;
+        }
     }
 
     &__tryfree {
         background-color: white;
         color: $mirage;
         border: rem(2px) solid $sunglow;
+        transition: all 1s;
+
+        &:hover {
+            background-color: $sunglow;
+            color: $mirage;
+        }
     }
 }
